@@ -1,0 +1,7 @@
+version: "3.3"
+services:
+  webapp:
+    build: .
+    image: marinamk/portfolio_web:latest
+    ports:
+      - "80:3000"
