@@ -8,6 +8,7 @@ export default function Home() {
   useEffect(() => {
     gsap.from(".title", { opacity: 0, y: 100, duration: 2 });
     const glitchEl = document.querySelector('.cybr_glitch');
+
     glitchAnimationRef.current = setInterval(() => {
       glitchEl.classList.toggle('glitch_animation');
     }, 1500);
@@ -170,7 +171,7 @@ export default function Home() {
 
         @font-face {
           font-family: Cyber;
-          src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+          src: url("/fonts/Cyber/Cyberpunk.ttf");
           font-display: swap;
         }
 
